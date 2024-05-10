@@ -35,10 +35,6 @@ npm start
 Este comando irá iniciar o servidor e seu aplicativo estará pronto para uso.
 
 
-
-
-
-
 # A API Teacher permite realizar operações CRUD (Create, Read, Update, Delete) em registros de professores.
 
 ## Endpoints
@@ -55,14 +51,22 @@ curl localhost:3000/teacher
 ## Cria um novo registro de professor.
 
 Exemplo de uso:
-curl -X POST -H "Content-Type: application/json" -d '{"nome":"Nome do Professor","nRegistro":"12345","modulo":"A"}' localhost:3000/teacher
+curl -X POST -H "Content-Type: application/json" -d '{
+  "nome": "Nome do Professor",
+  "nRegistro": "12345",
+  "modulo": "A"
+}' localhost:3000/teacher
 
 ### PUT /teacher/:id
 
 ## Atualiza as informações de um professor existente com o ID especificado.
 
 Exemplo de uso:
-curl -X PUT -H "Content-Type: application/json" -d '{"nome":"Novo Nome","nRegistro":"54321","modulo":"B"}' localhost:3000/teacher/ID_DO_PROFESSOR
+curl -X PUT -H "Content-Type: application/json" -d '{
+  "nome": "Novo Nome",
+  "nRegistro": "54321",
+  "modulo": "B"
+}' localhost:3000/teacher/ID_DO_PROFESSOR
 
 ### DELETE /teacher/:id
 
