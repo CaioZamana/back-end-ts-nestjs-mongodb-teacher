@@ -11,6 +11,13 @@ Este projeto utiliza o Nest.js, um framework para construção de aplicativos No
 Para este projeto, é utilizado um banco de dados MongoDB hospedado no [cloud.mongodb.com](http://cloud.mongodb.com). Este é um servidor online que permite a criação gratuita de um banco de dados simples. Caso seu sistema cresça, pode ser interessante migrar seu banco de dados para serviços mais robustos, como a AWS, por exemplo, ou mesmo utilizar uma versão paga.
 
 ## Instalação
+Instale o NestJS CLI globalmente executando o seguinte comando:
+npm install -g @nestjs/cli
+
+Criando um novo projeto NestJS executando o seguinte comando:
+nest new back-end-ts-nestjs-mongodb-teacher
+
+
 Para instalar as dependências do projeto, é necessário primeiro instalar o Mongoose, que é uma biblioteca do Node.js para modelagem de objetos MongoDB. Execute o seguinte comando:
 
 npm install --save mongoose @nestjs/mongoose
